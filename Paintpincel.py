@@ -24,3 +24,7 @@ def mouse_handler(event, x, y, flags, param):
 
 # Crear una imagen en blanco
 image = np.zeros((500, 500, 3), dtype=np.uint8)
+
+# Crear una ventana y asociar la función de manejo del mouse
+cv2.namedWindow("Dibujar Líneas")
+cv2.setMouseCallback("Dibujar Líneas", mouse_handler)
