@@ -22,3 +22,5 @@ def mouse_handler(event, x, y, flags, param):
             last_point = (x, y)
             cv2.imshow("Dibujar Líneas", image)
 
+# Crear una imagen en blanco
+image = np.zeros((500, 500, 3), dtype=np.uint8)
