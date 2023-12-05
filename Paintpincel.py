@@ -39,3 +39,5 @@ while True:
     if key == ord('q'):
         break
 
+# Cerrar todas las ventanas
+cv2.destroyAllWindows()
