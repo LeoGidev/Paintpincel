@@ -28,3 +28,14 @@ image = np.zeros((500, 500, 3), dtype=np.uint8)
 # Crear una ventana y asociar la función de manejo del mouse
 cv2.namedWindow("Dibujar Líneas")
 cv2.setMouseCallback("Dibujar Líneas", mouse_handler)
+
+# Bucle principal
+while True:
+    # Mostrar la imagen con las líneas dibujadas
+    cv2.imshow("Dibujar Líneas", image)
+
+    # Esperar la tecla 'q' para salir del bucle
+    key = cv2.waitKey(1) & 0xFF
+    if key == ord('q'):
+        break
+
